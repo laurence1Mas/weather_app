@@ -6,8 +6,6 @@ function Header({city,setCity, onSearch, onLocate}) {
     return (
         <header className="bg-blue-600 text-white p-4 shadow-md">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4">
-
-                {/* Logo / Title */}
                 <h1 className="text-2xl font-bold flex items-center gap-2">
                     Weather App
                 </h1>
@@ -19,11 +17,11 @@ function Header({city,setCity, onSearch, onLocate}) {
                         placeholder="Enter city..."
                         value={city}
                         onChange={(e) => setCity(e.target.value)}
-                        className="w-full p-2 rounded text-black"
+                        className="w-full p-2 rounded-full text-black border-none boder-0 focus:outline-none"
                     />
                     <button
                         onClick={onSearch}
-                        className="bg-white text-blue-600 px-4 rounded font-semibold"
+                        className="bg-white text-blue-600 px-4 rounded-full font-semibold"
                     >
                         Search
                     </button>
