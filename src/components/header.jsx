@@ -4,7 +4,7 @@ import React from "react";
 function Header({city,setCity, onSearch, onLocate}) {
 
     return (
-        <header className="bg-blue-600 text-white p-4 shadow-md">
+        <header className="bg-blue-600 text-white p-4 shadow-md ">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4">
                 <h1 className="text-2xl font-bold flex items-center gap-2">
                     Weather App
